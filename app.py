@@ -6,8 +6,8 @@ import numpy as np
 import joblib
 
 # --- LOAD SAVED MODEL & PREPROCESSING ---
-model = joblib.load('credit_score_model.pkl')   # Trained classifier (e.g. LogisticRegression/RandomForest)
-scaler = joblib.load('scaler.pkl')               # Same scaler used in training (StandardScaler) - normalizes inputs
+model = joblib.load('credit_score_model.pkl')   # Trained classifier 
+scaler = joblib.load('scaler.pkl')               # Same scaler used in training
 columns = joblib.load('column.pkl')
 try:
     columns = list(columns)
